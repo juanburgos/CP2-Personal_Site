@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Site</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mynerve&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="bg-dark text-secondary px-4 pt-3 text-center">
+      <div class="pt-3">
+        <h1 class="display-5 fw-bold text-white">Juan Burgos</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="fs-1">Hello!</p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center"></div>
+        </div>
+      </div>
+      <img src="./images/profilepic.webp" alt="profile picture" height="200" />
+    </div>
+    <div class="row text-center pt-3">
+      <div class="col-lg-3 col-md-6 my-3">
+        <a href="https://juanburgos.github.io/CSS-Grid-CV/" target="_blank"
+          ><img src="./images/resume.png" alt="resume" height="150" />
+          <p class="fs-3 my-2">Resume</p></a
+        >
+      </div>
+      <div class="col-lg-3 col-md-6 my-3">
+        <a
+          href="https://github.com/juanburgos?tab=repositories"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img src="./images/projects.png" alt="projects" height="150" />
+          <p class="fs-3 my-2">My Projects</p></a
+        >
+      </div>
+      <div class="col-lg-3 col-md-6 my-3">
+        <a
+          href="https://juanburgos.github.io/capstone-1-html/public/hobbies.html"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img src="./images/about.png" alt="about" height="150" />
+          <p class="fs-3 my-2">About me</p></a
+        >
+      </div>
+      <div class="col-lg-3 col-md-6 my-3">
+        <a
+          href="https://juanburgos.github.io/capstone-1-html/public/contact.html"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img src="./images/contact.png" alt="contact" height="150" />
+          <p class="fs-3 my-2">Contact me</p></a
+        >
+      </div>
+    </div>
+  </body>
+  <footer class="mt-5 text-center text-secondary">
+    <p class="fs-5">
+      © <span id="year"></span> Juan Burgos. 100% much. 100% honest work.
+    </p>
+    <script>
+      document.querySelector("#year").textContent = new Date().getFullYear();
+    </script>
+  </footer>
+</html>
